@@ -28,7 +28,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   void updateTotal() {
     totalAmount = expenses.fold(
       0,
-      (sum, item) => sum + (item["amount"] as int), // ✅ FIXED
+      (sum, item) => sum + (item["amount"] as int), 
     );
     setState(() {});
   }
